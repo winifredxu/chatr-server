@@ -2,8 +2,21 @@ Rails.application.routes.draw do
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
+
+=begin
+bin/rake routes
+      Prefix Verb   URI Pattern                  Controller#Action
+    messages GET    /messages(.:format)          messages#index
+             POST   /messages(.:format)          messages#create
+ new_message GET    /messages/new(.:format)      messages#new
+edit_message GET    /messages/:id/edit(.:format) messages#edit
+     message GET    /messages/:id(.:format)      messages#show
+             PATCH  /messages/:id(.:format)      messages#update
+             PUT    /messages/:id(.:format)      messages#update
+             DELETE /messages/:id(.:format)      messages#destroy
+=end
   resources :messages
-  
+
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
