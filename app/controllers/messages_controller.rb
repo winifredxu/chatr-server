@@ -1,6 +1,6 @@
 class MessagesController < ApplicationController
 
-#  protect_from_forgery only: []
+  protect_from_forgery only: []
 
   def index
 #    head :ok  #render nothing:true, status 200 ("Ok")
@@ -24,4 +24,11 @@ class MessagesController < ApplicationController
 
   end
 
+  def update
+
+  end
+
+  def destroy
+
+  end
 end

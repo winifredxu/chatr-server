@@ -16,7 +16,7 @@ edit_message GET    /messages/:id/edit(.:format) messages#edit
              DELETE /messages/:id(.:format)      messages#destroy
 =end
   resources :messages
-
+  
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
 
